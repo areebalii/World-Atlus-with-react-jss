@@ -22,7 +22,7 @@ export const Countries = () => {
   const handleCountryCatagories = (e) => {
     const selectCategory = e.target.value.toLowerCase();
     console.log(selectCategory);
-    if (selectCategory === "All") {
+    if (selectCategory === "all") {
       // setAllCountries(countries);
       setCountries(allCountries);
     } else {

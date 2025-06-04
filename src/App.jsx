@@ -5,6 +5,7 @@ import { About } from './Components/[ages/About'
 import { Countries } from './Components/[ages/Countries'
 import { AppLayout } from './Components/layout/AppLayout'
 import { Contact } from './Components/[ages/Contact'
+import { CountryDetails } from './Components/[ages/CountryDetails'
 
 function App() {
 
@@ -24,6 +25,10 @@ function App() {
         {
           path: '/countries',
           element: <Countries />
+        },
+        {
+          path: '/countries/:countryCode',
+          element: <CountryDetails />
         },
         {
           path: '/contact',
